@@ -1,6 +1,12 @@
 {
+    "name": "my-php-project - umut",
+    "description": "A simple PHP project with Application Insights",
     "require": {
-        
-        "microsoft/application-insights": ">=0.4.3"
+        "microsoft/application-insights": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MyPhpProject\\": "src/"
+        }
     }
 }
