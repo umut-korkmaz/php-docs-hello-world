@@ -1,2 +1,6 @@
-require: "microsoft/application-insights": "*"
-require_once 'vendor/autoload.php';
+{
+    "require": {
+        
+        "microsoft/application-insights": ">=0.4.3"
+    },
+}
