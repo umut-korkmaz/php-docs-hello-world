@@ -1,5 +1,5 @@
 <?php
-require __DIR__ . 'vendor/autoload.php';
+require __DIR__ . './vendor/autoload.php';
 
 use ApplicationInsights\Telemetry_Client;
 use ApplicationInsights\Channel\Telemetry_Channel;
