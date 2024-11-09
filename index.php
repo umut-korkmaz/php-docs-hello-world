@@ -1,24 +1,15 @@
 <?php
+require __DIR__ . '/../vendor/autoload.php';
 
-require_once('../vendor/autoload.php');
+use ApplicationInsights\Telemetry_Client;
+use ApplicationInsights\Channel\Telemetry_Channel;
 
-echo "Hello World5!";
-error_log('test umut error log');
+$instrumentationKey = 'YOUR_INSTRUMENTATION_KEY';
+$telemetryClient = new Telemetry_Client();
+$telemetryClient->getContext()->setInstrumentationKey($instrumentationKey);
 
-$telemetryClient = new \ApplicationInsights\Telemetry_Client();
-$context = $telemetryClient->getContext();
+// Track a simple event
+$telemetryClient->trackEvent('My custom event');
 
-// Necessary
-$context->setInstrumentationKey('YOUR INSTRUMENTATION KEY');
-
-// Optional
-$context->getSessionContext()->setId(session_id());
-$context->getUserContext()->setId('YOUR USER ID');
-$context->getApplicationContext()->setVer('YOUR VERSION');
-$context->getLocationContext()->setIp('YOUR IP');
-
-// Start tracking
-$telemetryClient->trackEvent('name of your event');
+// Send the data to Application Insights
 $telemetryClient->flush();
-
-?>
