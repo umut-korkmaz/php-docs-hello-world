@@ -1,6 +1,6 @@
 <?php
 
-echo "Hello World4!";
+echo "Hello World5!";
 error_log('test umut error log');
 
 $telemetryClient = new \ApplicationInsights\Telemetry_Client();
