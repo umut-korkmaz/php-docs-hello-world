@@ -1,0 +1,2 @@
+require: "microsoft/application-insights": "*"
+require_once 'vendor/autoload.php';
