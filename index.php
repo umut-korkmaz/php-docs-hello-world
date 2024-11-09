@@ -1,6 +1,8 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
+echo "Hellow World!";
+
 use ApplicationInsights\Telemetry_Client;
 use ApplicationInsights\Channel\Telemetry_Channel;
 
