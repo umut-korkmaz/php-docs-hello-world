@@ -1,5 +1,7 @@
 <?php
 
+require_once('../vendor/autoload.php');
+
 echo "Hello World5!";
 error_log('test umut error log');
 
