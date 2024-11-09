@@ -1,6 +1,6 @@
 {  
     "require": {
-        "microsoft/application-insights": "^1.0"
+        "microsoft/application-insights": "0.4.5"
     },
     "autoload": {
         "psr-4": {
